@@ -1,0 +1,167 @@
+body {
+  font-family: Plus Jakarta Sans, sans-serif;
+;
+}
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  border-radius: 1px;
+  border-color: #c3d4e966;
+}
+
+.search {
+  flex: 1;
+  border: 1px;
+}
+.rental-platform {
+  background-color: #54a6ff;
+  border-radius: 10px;
+  color: white;
+}
+
+.platform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.easy-rental {
+  background-color: #3563E9;
+  border-radius: 10px;
+  color: white;
+}
+
+.rent-btn {
+  padding: 20px;
+  gap: 8px;
+  background-color: #3563e9;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+#easy-btn {
+  padding: 20px;
+  gap: 8px;
+  background-color: #54a6ff;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.locations {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 32px 0;
+  gap: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
+}
+
+.pick-up {
+  padding-left: 64px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
+}
+
+.drop-off {
+  padding-left: 64px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08)
+}
+
+.popular-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recommendation-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.car-models {
+  border-radius: 10px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.logo {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  color: #3563E9;
+}
+
+.morent-vision {
+  align-self: flex-start;
+}
+
+.terms-conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-footer, 
+span {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.show-btn {
+  background-color: #3563E9;
+  padding: 20px;
+  gap: 8px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 50px;
+}
+
+.more-cars {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .platform {
+    grid-template-columns: 1fr;
+  }
+
+  .locations {
+    flex-direction: column;
+  }
+
+  .popular-cars-grid,
+  .recommendation-cars-grid {
+    grid-template-columns: 1fr;
+  }
+}

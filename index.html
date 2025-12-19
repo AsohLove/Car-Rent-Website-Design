@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rent Website Design- Pickolab Studio(Community)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-        <section>
-            <div>
-                <img src="/assets/command.png" alt="command">
-                <h1>High Fidelity Mobile - Home Car Rent</h1>
+    <main>   
+        <header class="header-navbar">
+            <h1 class="logo">MORENT</h1>
+            <div class="search">
+                <input type="search" placeholder="Search something here">
             </div>
-            <div>
-                <p>Last Updated: </p>
-                <p>8 Aug 2022 </p>
+            <div class="nav-icons">
+                <img src="/assets/AshLike.png" alt="header like icon">
+                <img src="/assets/Notification.png" alt="notification icon">
+                <img src="/assets/Settings.png" alt="settings icon">
+                <img src="/assets/Profil.png" alt="profile picture">
             </div>
-        </section>
-    <section>
-            <!-- <section>
-
-            </section> -->
-
+        </header>
+        
         <section class="content">
-            <div>
-                <div>
+            <section class="platform">
+                <div class="rental-platform">
                     <h2>The Best Platform for CarRental</h2>
                     <p>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
-                    <button type="submit">Rental Car</button>
+                    <button class="rent-btn">Rental Car</button>
+                    <img src="/assets/image7.png" alt="Car Rental 7" >
                 </div>
-                <img src="/assets/image7.png" alt="Car Rental 7">
-                <div>
+                
+                <div class="easy-rental">
                     <h2>Easy way to rent a car at a low price</h2>
                     <p>Providing cheap car rental services and safe and comfortable facilities.</p>
-                    <button type="submit">Rental Car</button>
+                    <button type="button" id="easy-btn">Rental Car</button>
+                    <img src="/assets/image8.png" alt="Car Rental 8">
                 </div>
-                <img src="/assets/image8.png" alt="Car Rental 8">
-            </div>
+               
+            </section>
 
-        <section>
-            <div>
+        <section class="locations">
+            <div class="pick-up">
+                <h3>Pick-Up</h3>
                 <div>
                     <h2>Locations</h2>
                     <select name="city" id="city">
@@ -57,14 +63,15 @@
                       <option value="time">select your time</option>
                     </select>
                 </div>
-                <h3>Pick-Up</h3>
+        
             </div>
 
             <div>
                 <img src="/assets/Switch.png" alt="a switch icon">
             </div>
 
-            <div>
+            <div class="drop-off">
+                <h3>Drop-Off</h3>
                 <div>
                     <h2>Locations</h2>
                     <select name="city" id="city1">
@@ -83,7 +90,7 @@
                       <option value="time">select your time</option>
                     </select>
                 </div>
-                <h3>Drop-Off</h3>
+                
             </div>
            </section>
 
@@ -93,17 +100,18 @@
                     <p>Popular car</p>
                     <p>View All</p>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                        <p>Koenigsegg</p>
-                        <p>Sport</p>
+                <div class="popular-cars-grid">
+                    <div class="car-models">
+                        <div class="car-specs">
+                        <h4>Koenigsegg</h4>
+                        <span>Sport</span>
                         </div>
+                        
                         <img src="/assets/Like.png" alt="like emoji">
                         <img src="/assets/car.png" alt="rental car">
                         <img src="/assets/Spesification.png" alt="car specifications">
                         <span>$99.00/day</span>
-                        <button type="submit">Rent Now</button>
+                        <button type="button" class="rent-btn">Rent Now</button>
                     </div>
 
                     <div>
@@ -116,7 +124,7 @@
                         <img src="/assets/Spesification2.png" alt="car specifications">
                         <span>$80.00/day</span>
                         <s>$100</s>
-                        <button type="submit">Rent Now</button>
+                        <button type="button" class="rent-btn">Rent Now</button>
                     </div>
 
                     <div>
@@ -128,7 +136,7 @@
                         <img src="/assets/Car3.png" alt="rental car">
                         <img src="/assets/Spesification3.png" alt="car specifications">
                         <span>$96.00/day</span>
-                        <button type="submit">Rent Now</button>
+                        <button type="button" class="rent-btn">Rent Now</button>
                     </div>
 
                     <div>
@@ -141,7 +149,7 @@
                         <img src="/assets/Spesification2.png" alt="car specifications">
                         <span>$80.00/day</span>
                         <s>$100.00</s>
-                        <button type="submit">Rent Now</button>
+                        <button type="button" class="rent-btn">Rent Now</button>
                     </div>
                 </div>
 
@@ -150,7 +158,7 @@
                         <p>Recommendation Car</p>
                     </div>
                     <div>
-                        <div class="recommendation1">
+                        <div class="recommendation-cars-grid">
                             <div>
                                 <div>
                                 <p>All New Rush</p>
@@ -160,7 +168,7 @@
                                 <img src="/assets/Car5.png" alt="rental car">
                                 <img src="/assets/Spesification4.png" alt="car specifications">
                                 <span>$72.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -172,7 +180,7 @@
                                 <img src="/assets/Car6.png" alt="rental car">
                                 <img src="/assets/Spesification5.png" alt="car specifications">
                                 <span>$80.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -184,7 +192,7 @@
                                 <img src="/assets/Car7.png" alt="rental car">
                                 <img src="/assets/Spesification6.png" alt="car specifications">
                                 <span>$74.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -196,11 +204,9 @@
                                 <img src="/assets/Car8.png" alt="rental car">
                                 <img src="/assets/Spesification5.png" alt="car specifications">
                                 <span>$80.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
-                        </div>
-
-                        <div class="recommendation2">
+                
                             <div>
                                 <div>
                                 <p>MG ZX Exclusice</p>
@@ -211,7 +217,7 @@
                                 <img src="/assets/Spesification3.png" alt="car specifications">
                                 <span>$76.00/day</span>
                                 <s>$80.00</s>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -223,7 +229,7 @@
                                 <img src="/assets/Car10.png" alt="rental car">
                                 <img src="/assets/Spesification5.png" alt="car specifications">
                                 <span>$80.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -235,7 +241,7 @@
                                 <img src="/assets/Car11.png" alt="rental car">
                                 <img src="/assets/Spesification7.png" alt="car specifications">
                                 <span>$74.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                              <div>
@@ -247,7 +253,7 @@
                                 <img src="/assets/Car12.png" alt="rental car">
                                 <img src="/assets/Spesification5.png" alt="car specifications">
                                 <span>$80.00/day</span>
-                                <button type="submit">Rent Now</button>
+                                <button type="button" class="rent-btn">Rent Now</button>
                             </div>
 
                         </div>
@@ -259,14 +265,16 @@
             </div>
 
         </section>
-            <button type="submit">Show more car</button>
+            <div class="more-cars">
+            <button type="button" class="show-btn">Show more car</button>
             <p>120 Car</p>
+            </div>
         </section>
         <footer>
-            <section>
-                <div>
-                    <h2>MORENT</h2>
-                    <p>Our vision to provide conveniwnce and help increase your sales business.</p>
+            <section class="footer-section">
+                <div class="morent-vision">
+                    <h2 class="logo">MORENT</h2>
+                    <p>Our vision to provide convenience and help increase your sales business.</p>
                 </div>
                 <div>
                     <h2>About</h2>
@@ -282,11 +290,26 @@
                     <p>Podcast</p>
                     <p>Invite a friend</p>
                 </div>
+                <div>
+                    <h2>Socials</h2>
+                    <p>Discord</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Facebook</p>
+                </div>
             </section>
-            <p>Privacy &amp; Policy </p>
-            <p>&copy; 2022 MORENT. All rights reserved</p>
+            <div class="terms-conditions">
+                <div>
+                <p>&copy; 2022 MORENT. All rights reserved</p>
+                </div>
+                <div class="left-footer">
+                <span>Privacy &amp; Policy </span>
+                <span>Terms &amp; Conditions</span>
+                </div>
+            </div>
         </footer>
 
-    </section>  
+    </section> 
+    </main>  
 </body>
 </html>
