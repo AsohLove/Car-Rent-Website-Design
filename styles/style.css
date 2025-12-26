@@ -72,8 +72,7 @@ body {
   overflow: hidden;
 }
 
-.blue-rental
-img {
+.blue-rental img {
   position: absolute;
   padding-right: 24px;
   padding-bottom: 16px;
@@ -107,7 +106,7 @@ img {
   padding: 24px;
   margin: 32px 0;
   gap: 24px;
-  box-shadow: 0 10px 30px rgb(0 0 0 / 0.08);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
 }
 
 .pick-up {
@@ -115,7 +114,7 @@ img {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 10px 30px rgb(0 0 0 / 0.08);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
 }
 
 .sub-pickup {
@@ -139,7 +138,7 @@ select {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 10px 30px rgb(0 0 0 / 0.08);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
 }
 
 .pop-car {
@@ -211,8 +210,7 @@ span {
   justify-content: space-between;
 }
 
-.popular-specs
-img {
+.popular-specs img {
   max-width: 232px;
   margin: 20px 0;
   padding-left: 36px;
