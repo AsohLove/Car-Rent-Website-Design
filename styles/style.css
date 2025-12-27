@@ -183,7 +183,7 @@ span {
   color: #90a3bf;
 }
 
-.popular-cars-grid, 
+.popular-cars-grid,
 .recommendation-cars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -305,8 +305,11 @@ footer {
   line-height: 150%;
   color: #13131399;
 }
-
-.terms-conditions, 
+a {
+  text-decoration: none;
+  color: #000;
+}
+.terms-conditions,
 a {
   display: flex;
   justify-content: space-between;
