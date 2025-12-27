@@ -284,7 +284,6 @@ footer {
   font-weight: 500;
   line-height: 150%;
   color: #13131399;
-  text-decoration: none;
 }
 
 .foot-socials {
@@ -318,7 +317,6 @@ a {
   align-items: center;
   padding: 20px;
   flex-wrap: wrap;
-  text-decoration: none;
   color: #1a202c;
   font-size: 16px;
   font-weight: 600;
