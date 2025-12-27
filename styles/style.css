@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #f6f7f9;
@@ -383,8 +387,8 @@ a {
   }
 
   .terms-conditions {
-    flex-direction: column;
-    gap: 12px;
+    padding: 20px;
+    justify-content: center;
     text-align: center;
   }
 
@@ -394,9 +398,27 @@ a {
 
   .header-navbar {
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .search {
     width: 100%;
+  }
+
+  .left-footer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .platform {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-cars-grid,
+  .recommendation-cars-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
