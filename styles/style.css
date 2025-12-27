@@ -392,13 +392,8 @@ a {
     text-align: center;
   }
 
-  .left-footer {
-    justify-content: center;
-  }
-
   .header-navbar {
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: stretch;
   }
 
