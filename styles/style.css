@@ -137,7 +137,7 @@ body {
 }
 
 .drop-off {
-  box-shadow: 0 10px 30px rgb(0 0 0 / 8%); 
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
   padding-left: 64px;
   width: 100%;
   border-radius: 10px;
@@ -183,7 +183,8 @@ span {
   color: #90a3bf;
 }
 
-.popular-cars-grid, .recommendation-cars-grid {
+.popular-cars-grid, 
+.recommendation-cars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
@@ -305,7 +306,8 @@ footer {
   color: #13131399;
 }
 
-.terms-conditions, a {
+.terms-conditions, 
+a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,8 +319,7 @@ footer {
   font-weight: 600;
 }
 
-.left-footer
-p {
+.left-footer p {
   font-weight: 600;
   font-size: 16px;
 }
