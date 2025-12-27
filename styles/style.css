@@ -1,59 +1,61 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #f6f7f9;
+  margin: 0;
 }
 
 .header-navbar {
   display: flex;
   align-items: center;
+  padding: 20px 60px;
   justify-content: space-between;
   gap: 2px;
-  border: 1px;
-  border-color: #c3d4e966;
+  border-bottom: 1px solid #c3d4e966;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .nav-icons {
   display: flex;
   gap: 20px;
-  padding-top: 40px;
+  margin-top: 20px;
 }
 
 .logo {
   font-weight: 700;
-  font-style: bold;
   font-size: 32px;
   letter-spacing: -0.03em;
   color: #3563e9;
-  padding-left: 60px;
-  max-width: 146px;
 }
 
 .search-btn {
   border-radius: 70px;
   border: 1px solid #c3d4e9;
-  max-width: 492px;
+  max-width: 100%;
   height: 44px;
-  padding-left: 272px;
-  background-image: url("/assets/search-normal.png");
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
+  padding-left: 44px;
+  background: url("/assets/search-normal.png") no-repeat 12px center;
 }
 
 .rental-platform {
   background-color: #54a6ff;
   border-radius: 10px;
   color: white;
-  padding-top: 32px;
   padding-left: 64px;
-  max-width: 640px;
-  margin-left: 300px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.rental-platform img {
+  display: block;
+  margin: 0 auto;
 }
 
 .platform {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 50px;
+  padding: 0 60px;
 }
 
 .easy-rental {
@@ -61,26 +63,31 @@ body {
   border-radius: 10px;
   color: white;
   padding-left: 36px;
-  padding-top: 32px;
-  max-width: 640px;
+  max-width: 100%;
+}
+
+.easy-rental img {
+  display: block;
+  margin: 0 auto;
 }
 
 .blue-rental {
-  position: relative;
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
   border-radius: 12px;
   padding: 32px;
-  overflow: hidden;
+  max-width: 284px;
 }
 
-.blue-rental img {
-  position: absolute;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  max-width: 250px;
+.blue-rental h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 .rent-btn {
-  padding: 20px;
+  padding: 12px 20px;
   gap: 8px;
   background-color: #3563e9;
   color: white;
@@ -89,7 +96,7 @@ body {
 }
 
 #easy-btn {
-  padding: 20px;
+  padding: 12px 20px;
   gap: 8px;
   background-color: #54a6ff;
   color: white;
@@ -98,52 +105,48 @@ body {
 }
 
 .locations {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  background-color: white;
+  justify-content: center;
   border-radius: 10px;
   padding: 24px;
-  margin: 32px 0;
+  margin: 0 auto;
   gap: 24px;
-  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
 }
 
 .pick-up {
-  padding-left: 64px;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 64px;
 }
 
 .sub-pickup {
   display: flex;
-  padding-top: 60px;
+  margin-top: 24px;
   padding-left: 48px;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
-select {
-  height: 20px;
-  max-width: 104px;
+.sub-pickup p {
+  font-weight: 500;
   font-size: 12px;
-  font-weight: 500px;
-  line-height: 200%;
-  letter-spacing: -0.01em;
+  line-height: 100%;
+  color: #90a3bf;
 }
 
 .drop-off {
+  box-shadow: 0 10px 30px rgb(0 0 0 / 8%); 
   padding-left: 64px;
+  width: 100%;
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
 }
 
 .pop-car {
   display: flex;
   justify-content: space-between;
+  padding: 0 60px;
 }
 
 .pop-carp {
@@ -169,40 +172,31 @@ select {
   padding-top: 24px;
   padding-left: 24px;
   gap: 4px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
-  font-style: bold;
-  line-height: 150%;
 }
 
 span {
   font-weight: 700;
   font-size: 14px;
-  font-style: bold;
   letter-spacing: -0.02em;
-  line-height: 150%;
   color: #90a3bf;
 }
 
-.popular-cars-grid {
+.popular-cars-grid, .recommendation-cars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-}
-
-.recommendation-cars-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  gap: 22px;
 }
 
 .popular-specs {
   background-color: #fff;
   border-radius: 12px;
-  border: 1px solid transparent;
   padding: 20px;
+  display: flex;
   flex-direction: column;
   gap: 18px;
+  max-width: 304px;
 }
 
 .car-models {
@@ -211,7 +205,7 @@ span {
 }
 
 .popular-specs img {
-  max-width: 232px;
+  max-width: 100%;
   margin: 20px 0;
   padding-left: 36px;
 }
@@ -222,30 +216,6 @@ span {
   align-items: center;
 }
 
-.footer-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.morent-vision {
-  align-self: flex-start;
-}
-
-.terms-conditions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.left-footer,
-span {
-  margin-left: 20px;
-  font-weight: 600;
-  font-size: 16px;
-}
-
 .show-btn {
   background-color: #3563e9;
   padding: 20px;
@@ -253,11 +223,110 @@ span {
   border-radius: 4px;
   color: white;
   margin-top: 50px;
+  display: inline-block;
+}
+
+.more-class {
+  display: block;
+  margin: 0 auto;
 }
 
 .more-cars {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.numof-cars {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  margin-right: 200px;
+}
+
+#recomm-para {
+  font-size: 16px;
+  font-weight: 600;
+  color: #90a3bf;
+  margin-top: 32px 0 32px 60px;
+}
+
+footer {
+  height: 480px;
+  width: 100%;
+  background-color: #f6f7f9;
+}
+
+.footer-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.footer-links a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #13131399;
+  text-decoration: none;
+}
+
+.foot-socials {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.morent-vision {
+  display: flex;
+  flex-direction: column;
+  max-width: 292px;
+}
+
+.morent-vision h2,
+.morent-vision p {
+  margin: 0;
+}
+
+.morent-vision p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #13131399;
+}
+
+.terms-conditions, a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #1a202c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.left-footer
+p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.left-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
 }
 
 @media (max-width: 768px) {
@@ -272,5 +341,15 @@ span {
   .popular-cars-grid,
   .recommendation-cars-grid {
     grid-template-columns: 1fr;
+  }
+
+  .terms-conditions {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .left-footer {
+    justify-content: center;
   }
 }
