@@ -289,7 +289,7 @@ span {
 }
 
 footer {
-  height: 480px;
+  height: auto;
   width: 100%;
   background-color: #f6f7f9;
 }
