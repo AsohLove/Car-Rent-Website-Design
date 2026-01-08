@@ -85,6 +85,12 @@ body {
   gap: 32px;
 }
 
+a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .main-menu a,
 .preferences a,
 .logout a {
@@ -100,12 +106,6 @@ body {
   font-size: 20px;
   line-height: 100%;
   color: #94a7cb66;
-}
-
-a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .dark-mode {
@@ -186,7 +186,6 @@ a {
   display: grid;
   grid-template-rows: auto auto;
   gap: 20px;
-    
 }
 
 .top5-car-rental {
